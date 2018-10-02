@@ -1,4 +1,5 @@
-.question {
+.question,
+.check {
     height: 250px;
     box-shadow: 1px 1px 5px grey;
     margin: 3%;
@@ -6,15 +7,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #fff;    
+}
+
+.question {
+background: #a2c2a2;
+
+}
+
+.check {
+    background: #e6acac;
 }
 
 .question input:focus, 
-.question button:focus {
+button:focus {
     outline: none;
 }
 
-.question button {
+.question button,
+.check button {
     margin: 0 2%;
     background: rgb(200, 200, 212);
     border-radius: 10%;
@@ -22,11 +32,16 @@
     cursor: pointer;
 }
 
-.question button:hover {
+.question h4,
+.check h4 {
+    letter-spacing: 2px;
+}
+
+button:hover {
     transform: scale(1.02)
 }
 
-.question button:active {
+button:active {
     transform: scale(.98)    
 }
 
@@ -40,6 +55,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
     width: 50%;
 }
+
+
+

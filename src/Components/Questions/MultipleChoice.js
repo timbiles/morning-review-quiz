@@ -21,7 +21,7 @@ const MultipleChoice = (props) => {
                 onClick={()=> props.handleClick()}
         
         >C.</button>        
-          <p>Dying Alone</p>
+          <p>Big Foot</p>
         </div>
         <div className="multiple">
         <button

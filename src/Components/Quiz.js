@@ -14,24 +14,37 @@ class Quiz extends Component {
       question1: 8,
       question2: 'wood',
       input:  '',
+      answer: false
     };
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(val) {
+handleChange(val) {
     this.setState({ input: val });
+    this.state.input == this.state.question2 
+    ? this.setState({answer:true})
+    : this.setState({answer:false})
+  }
+
+
+  answer1 = () => {
+      this.setState({answer1: true})
   }
 
   render() {
-    const { question1, question2, input } = this.state;
+    const { question1, question2, input, answer } = this.state;
     return (
       <div>
+          
         <h1>Quiz</h1>
-        <Question1 answer={question1} />
+        <Question1 
+            answer={question1}
+        />
         <Question2
-          answer={question2}
+          question2={question2}
           handleChange={this.handleChange}
           input={input}
+          answer={answer}
         />
         <Question3 />
       </div>
