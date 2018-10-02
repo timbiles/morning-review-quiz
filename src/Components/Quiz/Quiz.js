@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import Question1 from './Questions/Question1';
-import Question2 from './Questions/Question2';
-import Question3 from './Questions/Question3';
+import Question1 from '../Questions/Question1';
+import Question2 from '../Questions/Question2';
+import Question3 from '../Questions/Question3';
 
 import './Quiz.css';
 
@@ -14,7 +14,8 @@ class Quiz extends Component {
       question1: 8,
       question2: 'wood',
       input:  '',
-      answer: false
+      answer: false,
+      name: 'Olive'
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -32,13 +33,14 @@ handleChange(val) {
   }
 
   render() {
-    const { question1, question2, input, answer } = this.state;
+    const { question1, question2, input, answer, name } = this.state;
     return (
       <div>
           
-        <h1>Quiz</h1>
+        <h1 className='quiz_title'>Quiz</h1>
         <Question1 
-            answer={question1}
+            question1={question1}
+            name={name}
         />
         <Question2
           question2={question2}

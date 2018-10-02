@@ -5,7 +5,7 @@ const MultipleChoice = (props) => {
         <div className='multiple_choice'>
             <div className="multiple">
             <button
-                onClick={()=> props.handleClick()}
+                onClick={() => props.handleClick()}
             >A.</button>
           <p>Drowning</p>
         </div>

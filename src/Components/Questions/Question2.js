@@ -3,6 +3,7 @@
 import React from 'react';
 
 const Question2 = props => {
+  console.log(props)
   return (
     <div className={props.answer ? 'question' : 'check'}>
 
