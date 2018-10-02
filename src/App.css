@@ -2,6 +2,8 @@
   text-align: center;
   display: flex;
   justify-content: center;
+  background: rgb(247, 247, 247);
+  
 }
 
 .App-logo {
